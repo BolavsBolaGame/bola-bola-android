@@ -1,0 +1,15 @@
+BOLA VS BOLA — COMPILAR APK NA NUVEM
+
+1. Extraia este ZIP no Windows.
+2. No GitHub, crie um repositório chamado bola-vs-bola-android.
+3. Abra o repositório e escolha Add file > Upload files.
+4. No Explorador de Arquivos, abra a pasta extraída. Selecione e envie os arquivos e pastas que estão DENTRO de Bola_vs_Bola_Android_Capacitor, incluindo a pasta oculta .github. Não envie apenas o ZIP.
+5. Clique em Commit changes.
+6. Abra a aba Actions do repositório. Se pedir para habilitar workflows, confirme.
+7. Se a compilação não iniciar automaticamente, abra “Construir APK do Bola vs Bola”, clique em Run workflow e confirme.
+8. Aguarde o processo terminar com um visto verde. Abra a execução e, no fim, baixe o artefato “Bola-vs-Bola-APK”. Ele contém app-debug.apk.
+
+OBSERVAÇÕES:
+- Este fluxo cria um APK de teste (debug), não uma versão assinada para publicar na Play Store.
+- O repositório público torna o código do jogo visível para outras pessoas. Não envie senhas, chaves ou informações pessoais.
+- A compilação depende da disponibilidade e dos limites do GitHub Actions; se falhar, abra o registro da execução para ver a mensagem de erro.

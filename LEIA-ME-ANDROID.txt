@@ -1,0 +1,45 @@
+BOLA VS BOLA PARA ANDROID — CAPACITOR
+
+Este pacote contém o HTML completo mais recente do jogo e os arquivos iniciais do Capacitor. A pasta nativa Android será criada no notebook.
+
+REQUISITOS
+1. Windows com internet.
+2. Node.js 22 ou superior: https://nodejs.org/
+3. Android Studio: https://developer.android.com/studio
+4. Abra o Android Studio uma vez e, no SDK Manager, instale uma plataforma Android API 24 ou superior e as ferramentas recomendadas.
+
+CRIAR O PROJETO ANDROID
+1. Extraia o ZIP para uma pasta simples, por exemplo C:\\BolaVsBolaAndroid.
+2. Abra essa pasta no Explorador de Arquivos.
+3. Clique na barra de endereço, digite cmd e pressione Enter.
+4. Na janela preta, execute estes comandos, um por vez:
+
+   npm install
+   npx cap add android
+   npx cap sync android
+   npx cap open android
+
+Se o comando 'npx cap add android' disser que a plataforma já existe, pule esse comando e execute os dois seguintes.
+Na primeira abertura, aguarde o Android Studio baixar/sincronizar o Gradle e os componentes necessários.
+
+GERAR O APK DE TESTE
+Método recomendado:
+1. No Android Studio, espere a sincronização terminar.
+2. Selecione Build > Build Bundle(s) / APK(s) > Build APK(s).
+3. Quando terminar, clique em 'locate' na notificação para encontrar o arquivo APK.
+4. Copie o APK para o celular e abra-o para instalar. O Android pode pedir permissão para instalar o arquivo.
+
+Normalmente, o arquivo será:
+android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
+
+ATUALIZAR O JOGO
+Substitua www\\index.html pelo HTML atualizado e execute na pasta principal:
+   npx cap sync android
+Depois gere o APK novamente.
+
+OBSERVAÇÕES
+- O primeiro build precisa de internet para baixar dependências.
+- Este ZIP contém o HTML e a configuração; a pasta nativa 'android' é gerada no notebook pelo Capacitor.
+- Teste no celular o toque, áudio, tela cheia, controles e desempenho.
+- O APK de depuração serve para teste. Para publicar na Play Store será necessário criar uma versão assinada e cumprir os requisitos atuais da loja.
+- O identificador inicial é com.bolavsbola.app. Antes de publicar, escolha um identificador exclusivo.
